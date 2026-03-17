@@ -1,0 +1,135 @@
+{
+    "title": "player_progress",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "user_id": {
+            "type": "string",
+            "description": "User ID"
+        },
+        "player_id": {
+            "type": "integer",
+            "description": "Player ID"
+        },
+        "balance": {
+            "type": "number",
+            "description": "Player balance"
+        },
+        "level": {
+            "type": "integer",
+            "description": "Player level"
+        },
+        "xp": {
+            "type": "integer",
+            "description": "Experience points"
+        },
+        "total_drops": {
+            "type": "integer",
+            "description": "Total ball drops"
+        },
+        "total_won": {
+            "type": "number",
+            "description": "Total amount won"
+        },
+        "total_spent": {
+            "type": "number",
+            "description": "Total amount spent"
+        },
+        "biggest_win": {
+            "type": "number",
+            "description": "Biggest single win"
+        },
+        "tap_count": {
+            "type": "integer",
+            "description": "Total taps"
+        },
+        "combo_count": {
+            "type": "integer",
+            "description": "Current combo count"
+        },
+        "max_combo": {
+            "type": "integer",
+            "description": "Maximum combo achieved"
+        },
+        "consecutive_losses": {
+            "type": "integer",
+            "description": "Consecutive losses"
+        },
+        "prestige_level": {
+            "type": "integer",
+            "description": "Prestige level"
+        },
+        "selected_skin": {
+            "type": "string",
+            "description": "Selected ball skin"
+        },
+        "selected_theme": {
+            "type": "string",
+            "description": "Selected board theme"
+        },
+        "owned_skins": {
+            "type": "string",
+            "description": "JSON array of owned skins"
+        },
+        "owned_themes": {
+            "type": "string",
+            "description": "JSON array of owned themes"
+        },
+        "active_boosters": {
+            "type": "string",
+            "description": "JSON array of active boosters"
+        },
+        "shop_purchases": {
+            "type": "integer",
+            "description": "Number of shop purchases"
+        },
+        "achievements": {
+            "type": "string",
+            "description": "JSON array of achievements"
+        },
+        "daily_challenges": {
+            "type": "string",
+            "description": "JSON array of daily challenges"
+        },
+        "weekly_challenges": {
+            "type": "string",
+            "description": "JSON array of weekly challenges"
+        },
+        "last_daily_bonus": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Last daily bonus claim time"
+        },
+        "last_hourly_bonus": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Last hourly bonus claim time"
+        },
+        "last_wheel_spin": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Last fortune wheel spin time"
+        },
+        "login_streak": {
+            "type": "integer",
+            "description": "Consecutive login days streak"
+        },
+        "last_login_date": {
+            "type": "string",
+            "description": "Last login date string YYYY-MM-DD"
+        },
+        "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Last update timestamp"
+        }
+    },
+    "required": [
+        "id",
+        "user_id",
+        "player_id"
+    ]
+}

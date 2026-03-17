@@ -1,0 +1,45 @@
+{
+    "title": "leaderboard_entries",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "user_id": {
+            "type": "string",
+            "description": "Auth user ID"
+        },
+        "player_id": {
+            "type": "integer",
+            "description": "FK to players table"
+        },
+        "nickname": {
+            "type": "string",
+            "description": "Player nickname for display"
+        },
+        "total_won": {
+            "type": "number",
+            "description": "Total amount won"
+        },
+        "level": {
+            "type": "integer",
+            "description": "Player level"
+        },
+        "prestige_level": {
+            "type": "integer",
+            "description": "Prestige level"
+        },
+        "updated_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Last update timestamp"
+        }
+    },
+    "required": [
+        "id",
+        "user_id",
+        "player_id",
+        "nickname"
+    ]
+}

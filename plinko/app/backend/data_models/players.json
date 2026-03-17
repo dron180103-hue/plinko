@@ -1,0 +1,37 @@
+{
+    "title": "players",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "user_id": {
+            "type": "string",
+            "description": "Auth user ID"
+        },
+        "nickname": {
+            "type": "string",
+            "description": "Player display name, unique"
+        },
+        "password_hash": {
+            "type": "string",
+            "description": "Hashed password for login"
+        },
+        "is_admin": {
+            "type": "boolean",
+            "description": "Whether player is admin, default false"
+        },
+        "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Registration timestamp"
+        }
+    },
+    "required": [
+        "id",
+        "user_id",
+        "nickname",
+        "password_hash"
+    ]
+}
